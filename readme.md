@@ -1,15 +1,12 @@
 # Complex Stock Chart with Event Markers – Gnuplot
 
 This Gnuplot script (`stock_chart_complex.plt`) demonstrates advanced visualization techniques for financial data, showcasing how Gnuplot can function as both a plotting tool and a logic engine. The script processes Warsaw Stock Exchange data for Datawalk (DAT) and generates a sophisticated technical analysis dashboard.
-<p>
-<img src="stock.png">
-</p>
 
- Warsaw Stock Exchange (GPW) Stock Analysis
+##  Context: Warsaw Stock Exchange (GPW) Stock Analysis
 
 The chart displays real trading data from the Warsaw Stock Exchange (GPW), covering June 2024 to April 2025. This is a **demonstration script** that requires specially prepared data files with specific column formats.
 
-## Chart Components
+## 🔎 Chart Components
 
 ### Main Price Chart (Upper Panel)
 - **Candlestick chart** with conditional coloring based on price direction
@@ -21,7 +18,7 @@ The chart displays real trading data from the Warsaw Stock Exchange (GPW), cover
 - **Volume bars** with color coding matching price direction
 - **Synchronized x-axis** with main price chart
 
-## Event Marking System
+## 🎯 Event Marking System
 
 The script uses column 8 in the data file (`eod.txt`) to mark important events with different numeric codes:
 
@@ -84,7 +81,7 @@ price_change_color(change_percent) = (change_percent > 3 ? '#008B45' : ( \
 '' u 0:($2 < $5 ? $6 : 1/0) w impulses lc rgb up_volume_color
 ```
 
-## Advanced Gnuplot Techniques Demonstrated
+## 🛠️ Advanced Gnuplot Techniques Demonstrated
 
 ### 1. Conditional Rendering with Inline Expressions
 Selective rendering using `1/0` and ternary operators to mask or show data points dynamically.
