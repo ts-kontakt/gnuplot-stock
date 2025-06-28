@@ -90,7 +90,5 @@ recommend_color(code) = (code eq "BUY" ? rgb("green") : code eq "SELL" ? rgb("re
 ### 4. Multi-Layer Plot Composition
 Combining lines, filled boxes, arrows, and point markers with independent visibility rules.
 
-```
 ## Summary
-
 This script demonstrates how Gnuplot can act as both a plotter and a lightweight logic engine, using ternary operators extensively for conditional data processing. It's especially useful when you want full control over what gets shown and why, all from inside a self-contained `.plt` file — no external scripting required.
