@@ -15,13 +15,13 @@ The chart displays real trading data from the Warsaw Stock Exchange (GPW), cover
 The script uses column 8 in the data file (`eod.txt`) to mark important events with different numeric codes:
 
 | Code | Event Type | Color | Description |
-|------|------------|---------|-------|-------------|
+|------|------------|-------|-------------|
 | `1` | Sell Recommendation | Red | Strong sell signal |
-| `2` | Reduce Recommendation| Gray | Reduce position |
+| `2` | Reduce Recommendation | Gray | Reduce position |
 | `4` | Buy Recommendation | Gray | Moderate buy signal |
 | `5` | Strong Buy | Green | Strong buy recommendation |
 | `8` | Company Report | Blue | Quarterly/annual reports |
-| `9` | Dividend  | Blue | Dividend payments |
+| `9` | Dividend | Blue | Dividend payments |
 
 ### Smart Positioning Logic
 
