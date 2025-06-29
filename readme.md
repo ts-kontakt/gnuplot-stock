@@ -1,24 +1,27 @@
 # Complex Stock Chart with Event Markers – Gnuplot
 
 This Gnuplot script (`stock_chart_complex.plt`) demonstrates advanced visualization techniques for financial data, showcasing how Gnuplot can function as both a plotting tool and a logic engine. The script processes Warsaw Stock Exchange data for Datawalk (DAT) with example events.
+
+<br/>
+
 <img src="stock.png">
 
 Warsaw Stock Exchange (GPW) Stock Analysis
 
-The chart displays real trading data from the Warsaw Stock Exchange (GPW), covering June 2024 to April 2025. This is a **demonstration script** that requires specially prepared data files with specific column formats.
+The chart displays real trading data from the Warsaw Stock Exchange (GPW), covering June 2024 to April 2025. This is a **demonstration script** that requires  prepared data  columns.
 
 ##  Event Marking System
 
 The script uses column 8 in the data file (`eod.txt`) to mark important events with different numeric codes:
 
-| Code | Event Type | Symbol | Color | Description |
+| Code | Event Type | Color | Description |
 |------|------------|---------|-------|-------------|
-| `1` | Sell Recommendation | `O` | Red | Strong sell signal |
-| `2` | Reduce Recommendation | `O` | Gray | Reduce position |
-| `4` | Buy Recommendation | `S` | Gray | Moderate buy signal |
-| `5` | Strong Buy | `S` | Green | Strong buy recommendation |
-| `8` | Company Report | `i` | Blue | Quarterly/annual reports |
-| `9` | Dividend | `i` | Blue | Dividend payments |
+| `1` | Sell Recommendation | Red | Strong sell signal |
+| `2` | Reduce Recommendation| Gray | Reduce position |
+| `4` | Buy Recommendation | Gray | Moderate buy signal |
+| `5` | Strong Buy | Green | Strong buy recommendation |
+| `8` | Company Report | Blue | Quarterly/annual reports |
+| `9` | Dividend  | Blue | Dividend payments |
 
 ### Smart Positioning Logic
 
@@ -32,7 +35,7 @@ The script intelligently positions event markers to avoid overlap with price act
 - **Above median price**: Markers appear below the low price
 - **Below median price**: Markers appear above the high price
 
-## Ternary Operator Techniques for Column Data
+## Ternary Operator for conditional plotting
 
 The script extensively uses ternary operators for conditional data processing:
 
